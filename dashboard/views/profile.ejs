@@ -1,0 +1,19 @@
+<%- include('index'); %>
+<style>
+    .profile{
+        margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-family: monospace,sans-serif,serif;
+    font-size: 2.3rem;
+ font-weight: 900;
+    }
+</style>
+<div class="profile">
+    <h1>User Profile Detail Below</h1>
+
+    <h3>Welcome to <strong style="color: red;"><%= ProfileDetail.fullName %></strong></h3>
+    <h3>Your Email is <strong style="color: red;"><%= ProfileDetail.email %></strong></h3>
+    <h3>Your Phone Number is <strong style="color: red;"><%= ProfileDetail.phone %></strong></h3>
+</div>

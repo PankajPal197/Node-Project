@@ -1,0 +1,30 @@
+<%- include('common/header') %>
+<style>
+    .container h1{
+font-weight:900;
+font-family:sans-serif;
+padding: 20px;
+color: red;
+font-size: 2rem;
+    }
+    .container .inner{
+        border-radius: 2px solid;
+        box-shadow: 3px 5px 3px 4px #d4d4d4;
+        height:50vh;
+        /* background:linear-gradient(blue,green); */
+    }
+    .container .inner h2{
+        padding: 10px;
+        /* color:cadetblue; */
+       
+    }
+</style>
+<div class="container text-center">
+<h1>User Profile </h1>
+<div class="inner">
+    <h2>User Name <%= User.name %> </h2>
+    <h2>User Email <%= User.email %></h2>
+    <h2>User Contact Number <%= User.phone %></h2>
+    <h2>User Address <%= User.address %></h2>
+</div>
+</div>
